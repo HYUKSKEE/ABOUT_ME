@@ -1,0 +1,60 @@
+body {
+  font-family: "Roboto Mono", monospace;
+}
+
+.Nav_bar {
+  margin: auto;
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.Nav_bar ul {
+  display: inline-block;
+  padding-left: 0px;
+}
+
+.Nav_bar h1 {
+  display: none;
+}
+
+.Nav_bar li {
+  list-style: none;
+  float: left;
+  width: 100px;
+  padding: 0px 30px 0px 30px;
+  text-align: center;
+}
+
+.Nav_bar li a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.Home {
+  width: 1500px;
+  margin: auto;
+}
+
+.Home h1 {
+  width: 500px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.Home img {
+  border-left: 1px solid rgb(97, 112, 107, 0.2);
+  border-right: 1px solid rgb(97, 112, 107, 0.2);
+  border-bottom: 2px solid rgb(97, 112, 107, 0.2);
+  width: 500px;
+  border-radius: 50%;
+}
+
+.Home img:hover {
+  box-shadow: 0px 10px 50px 0px rgba(255, 255, 255, 0.3);
+}
+
+.Home p {
+  color: aliceblue;
+  text-align: center;
+}
