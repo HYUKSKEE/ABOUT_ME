@@ -1,0 +1,39 @@
+.About {
+  display: flex;
+  float: left;
+  margin-top: 10%;
+}
+
+.About h1 {
+  display: none;
+}
+
+.About ul {
+  list-style: none;
+}
+
+.About h2 img {
+  width: 350px;
+  height: 350px;
+  margin: 30px 30px 30px 350px;
+  border-radius: 25%;
+  box-shadow: 0px 10px 10px 5px rgb(0, 0, 0, 0.2);
+}
+
+.About h2 img ::after {
+  border: 3px solid white;
+}
+
+.About .My_info {
+  margin-top: 70px;
+  width: 650px;
+  color: aliceblue;
+}
+
+.About .My_info ul {
+  font-size: 20px;
+}
+
+.About .My_info p {
+  margin-left: 40px;
+}

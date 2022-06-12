@@ -1,11 +1,18 @@
 body {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Roboto Slab", serif;
 }
 
 .Nav_bar {
+  background: linear-gradient(
+    to bottom,
+    rgb(255, 255, 251, 0.01),
+    rgb(255, 255, 255, 0.03),
+    rgb(255, 255, 255, 0.05)
+  );
+
   margin: auto;
   text-align: center;
-  font-size: 20px;
+  font-size: 15px;
   font-style: italic;
 }
 
@@ -43,11 +50,13 @@ body {
 }
 
 .Home img {
+  height: 700px;
   border-left: 1px solid rgb(97, 112, 107, 0.2);
   border-right: 1px solid rgb(97, 112, 107, 0.2);
   border-bottom: 2px solid rgb(97, 112, 107, 0.2);
   width: 500px;
   border-radius: 50%;
+  margin: 30px 0px 30px 0px;
 }
 
 .Home img:hover {
