@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./style/Album.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style/Album.css" />
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
-  </style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+    </style>
     <title>Album</title>
   </head>
-  <body style="background-color: #a3cca2;">
+  <body style="background-color: #a3cca2">
     <nav class="Nav_bar">
       <h1>Global navigation Menu</h1>
       <ul>
@@ -25,41 +25,141 @@
         </li>
       </ul>
     </nav>
-    <h1>HYUKSKEE's Album page</h1>
-    <ul>
-      <li>
-        <h1>KOTAKINABALU </br></h1>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/YRlC4lN-CY0"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+    <h1 class="sr-only">HYUKSKEE's Album page</h1>
+    <ul class="music-player">
+      <li class="music-play-item">
+        <img
+          src="./assets/Kotakinabalu.jpg"
+          alt="KOTA KINABALU"
+          lang="ko"
+          calss="music-album-cover"
+        />
+        <div class="music-info">
+          <div class="music-info-detail">
+            <h1><span>KOTAKINABALU</span></h1>
+            <strong>AntiDep(항우울)</strong>
+          </div>
+          <span>
+            <span class="sr-only">Duration</span>
+            03:31
+          </span>
+        </div>
+        <audio
+          src="./assets/AntiDep - KOTA KINABALU.mp3"
+          class="music-audio"
+        ></audio>
       </li>
-      <li>
-        <h1>In California</br></h1>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/wcvLfm81rPM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <li class="music-play-item">
+        <img
+          src="./assets/InCalifornia.jpg"
+          alt="KOTA KINABALU"
+          lang="ko"
+          calss="music-album-cover"
+        />
+        <div class="music-info">
+          <div class="music-info-detail">
+            <h1><span>In California</span></h1>
+            <strong>AntiDep(항우울)</strong>
+          </div>
+          <span>
+            <span class="sr-only">Duration</span>
+            04:32
+          </span>
+        </div>
+        <audio
+          src="./assets/AntiDep - In California.mp3"
+          class="music-audio"
+        ></audio>
       </li>
-      <li>
-        <h1>남교오거리 </br></h1>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/eZ3bIZF_r90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <li class="music-play-item">
+        <img
+          src="./assets/남교오거리.jpg"
+          alt="KOTA KINABALU"
+          lang="ko"
+          calss="music-album-cover"
+        />
+        <div class="music-info">
+          <div class="music-info-detail">
+            <h1><span>남교오거리</span></h1>
+            <strong>AntiDep(항우울)</strong>
+          </div>
+          <span>
+            <span class="sr-only">Duration</span>
+            02:09
+          </span>
+        </div>
+        <audio
+          src="./assets/AntiDep - 남교오거리.mp3"
+          class="music-audio"
+        ></audio>
       </li>
-      <li>
-        <h1>잘 생각해봐</br></h1>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/n6tZ7r1IVnM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <li class="music-play-item">
+        <img
+          src="./assets/사랑한 날.jpg"
+          alt="KOTA KINABALU"
+          lang="ko"
+          calss="music-album-cover"
+        />
+        <div class="music-info">
+          <div class="music-info-detail">
+            <h1><span>사랑한 날</span></h1>
+            <strong>김진혁</strong>
+          </div>
+          <span>
+            <span class="sr-only">Duration</span>
+            05:00
+          </span>
+        </div>
+        <audio
+          src="./assets/김진혁 - 사랑한 날.mp3"
+          class="music-audio"
+        ></audio>
       </li>
-      <li>
-        <h1>사랑한 날</br></h1>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/9SPCYi-KN34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <li class="music-play-item">
+        <img
+          src="./assets/잘생각해봐.jpg"
+          alt="KOTA KINABALU"
+          lang="ko"
+          calss="music-album-cover"
+        />
+        <div class="music-info">
+          <div class="music-info-detail">
+            <h1><span>잘 생각해봐</span></h1>
+            <strong>김진혁</strong>
+          </div>
+          <span>
+            <span class="sr-only">Duration</span>
+            03:45
+          </span>
+        </div>
+        <audio
+          src="./assets/김진혁 - 잘 생각해봐.mp3"
+          class="music-audio"
+        ></audio>
       </li>
-      <li>
-        <h1>운명</br></h1>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/pnWoRhYOYXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <li class="music-play-item">
+        <img
+          src="./assets/Destiny.jpg"
+          alt="KOTA KINABALU"
+          lang="ko"
+          calss="music-album-cover"
+        />
+        <div class="music-info">
+          <div class="music-info-detail">
+            <h1><span>운명</span></h1>
+            <strong>진혁</strong>
+          </div>
+          <span>
+            <span class="sr-only">Duration</span>
+            03:51
+          </span>
+        </div>
+        <audio
+          src="./assets/김진혁 - 잘 생각해봐.mp3"
+          class="music-audio"
+        ></audio>
       </li>
-  </ul>
-    
+    </ul>
+    <script src="./Javascript/Album.js"></script>
   </body>
 </html>

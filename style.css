@@ -2,6 +2,10 @@ body {
   font-family: "Roboto Slab", serif;
 }
 
+.sr-only {
+  display: none;
+}
+
 .Nav_bar {
   background: linear-gradient(
     to bottom,
