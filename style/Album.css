@@ -1,4 +1,15 @@
+body::after {
+  content: "HYUKSKEE©";
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+  color: #1f2d3d;
+  font-size: 12px;
+  font-weight: 600;
+}
+
 .music-player {
+  font-family: "Nanum Myeongjo", serif;
   margin: auto;
   margin-top: 50px;
   max-width: 540px;
@@ -18,7 +29,7 @@
 }
 
 .music-play-item :hover {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.8);
   opacity: 0.6;
 }
 
@@ -41,7 +52,7 @@ img {
 }
 
 .music-info h1 {
-  margin: 0;
+  margin: 2px;
 }
 
 .music-info * {
