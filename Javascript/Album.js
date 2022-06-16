@@ -16,7 +16,3 @@ musicPlayItems.forEach(function (item) {
     item.isPlaying = !item.isPlaying;
   });
 });
-
-function new(){
- window.open("test.asp","new", "width=300, height=300, left=30, top=30, scrollbars=no,titlebar=no,status=no,resizable=no,fullscreen=no");
-}
