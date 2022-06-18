@@ -1,10 +1,10 @@
 const musicPlayItems = document.querySelectorAll(".music-play-item");
 
-musicPlayItems.forEach(function (item) {
+musicPlayItems.forEach((item) => {
   item.isPlaying = false;
   item.audio = item.querySelector("audio");
 
-  item.addEventListener("click", function () {
+  item.addEventListener("click", () => {
     if (this.isPlaying) {
       item.audio.pause();
       item.audio.currentTime = 0;
