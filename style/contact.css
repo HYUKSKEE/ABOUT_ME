@@ -1,0 +1,25 @@
+h1 {
+  display: none;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  margin-top: 15%;
+}
+
+ul {
+  padding: 0px;
+  text-align: center;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li img {
+  width: 100px;
+  height: 100px;
+  margin-left: 30px;
+  border-radius: 50%;
+}
