@@ -5,12 +5,13 @@ h1 {
 .container {
   width: 80%;
   margin: auto;
-  margin-top: 15%;
+  margin-top: 100px;
 }
 
 ul {
-  padding: 0px;
-  text-align: center;
+  padding: 0px 30px 0px 0px;
+  display: flex;
+  justify-content: center;
 }
 
 ul li {
@@ -25,20 +26,49 @@ ul li img {
 }
 
 form.email-form {
-  width: 600px;
+  width: 400px;
   margin: auto;
   margin-top: 100px;
-  padding: 5px;
+  padding: 5px 0px 15px 0px;
   text-align: center;
   background: #fff;
+  border-radius: 20px;
+}
+
+form.email-form p {
+  margin: 16px 0px 0px 70px;
+  display: table;
+}
+
+form.email-form p img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+form.email-form p span {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 form.email-form input {
+  width: 220px;
+  height: 30px;
   display: block;
   margin: auto;
   margin-top: 20px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(231, 231, 231);
+  border-radius: 5px;
+  box-shadow: 0px 6px 11px rgb(182, 182, 182);
 }
 
 form.email-form textarea {
+  width: 220px;
   margin-top: 20px;
+  margin-bottom: -10px;
+  border: 1px solid rgb(231, 231, 231);
+  border-radius: 5px;
+  box-shadow: 0px 6px 11px rgb(182, 182, 182);
 }
