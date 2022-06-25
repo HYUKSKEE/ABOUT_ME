@@ -11,6 +11,10 @@
     </style>
     <title>Contact</title>
     <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"
+    ></script>
+    <script
       src="https://kit.fontawesome.com/87030c74cb.js"
       crossorigin="anonymous"
     ></script>
@@ -50,5 +54,41 @@
         </li>
       </ul>
     </section>
+    <form action="#" method="get" class="email-form">
+      <h1>Send Email to Hyukskee</h1>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="성함을 입력해주세요"
+      />
+      <input
+        type="text"
+        id="email"
+        name="email"
+        placeholder="메일 주소를 입력해주세요"
+      />
+      <input
+        type="text"
+        id="phone"
+        name="phone"
+        placeholder="연락처를 입력해주세요 (생략 가능)"
+      />
+      <textarea
+        name="message"
+        id="message"
+        rows="5"
+        placeholder="내용을 입력해주세요 "
+      ></textarea>
+      <input
+        type="button"
+        id="submit"
+        name="submit"
+        class="btn white"
+        value="메일보내기"
+      />
+    </form>
+
+    <script src="./Javascript/mail.js"></script>
   </body>
 </html>
