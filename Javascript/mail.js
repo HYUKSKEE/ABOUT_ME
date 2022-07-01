@@ -19,8 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(function (response) {
           alert("SUCCESS!", response.status, response.text);
         });
+      window.location.reload();
     } else {
-      alert("FAILED...");
+      alert("FAILED...성함과 이메일을 올바르게 입력해주세요.");
     }
   });
 });
