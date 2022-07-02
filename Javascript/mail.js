@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   emailjs.init("dX097NSFRLFSZEIhk");
-  const submit = document.getElementById("submit");
+  const submit = document.querySelector(".submit");
   submit.addEventListener("click", () => {
     const templateParams = {
       name: document.getElementById("name").value,
@@ -19,9 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(function (response) {
           alert("SUCCESS!", response.status, response.text);
         });
-      window.location.reload();
     } else {
-      alert("FAILED...성함과 이메일을 올바르게 입력해주세요.");
+      alert("FAILED...성함 또는 이메일을 올바르게 입력해주세요.");
     }
   });
 });
