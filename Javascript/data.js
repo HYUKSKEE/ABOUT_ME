@@ -44,9 +44,6 @@ const quizs = [
 const quiz = document.querySelector("#quiz span:first-child");
 const answer = document.querySelector("#quiz input:last-child");
 const todaysQuiz = quizs[Math.floor(Math.random() * quizs.length)];
-
+/* console.log(todaysQuiz.answer); */
 quiz.innerText = todaysQuiz.quiz;
-answer.innerText = `- ${todaysQuiz.answer}`;
-/* login.js로 넘겨준 quizs 데이터가  
-html input에 어떤 value로 저장되어 있는지
-console.log()로 확인필요함 */
+answer.innerText = `- ${todaysQuiz.answer}`; /*html에 그려줄 필요 없음*/
