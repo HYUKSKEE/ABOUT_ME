@@ -1,9 +1,7 @@
 "use strict";
 const loginForm = document.querySelector("#Login-form");
 const loginInput = document.querySelector("#Login-form input");
-const goToLink = document.querySelector("#link");
-const toDoSection = document.querySelector("#todo-section");
-const toDoFormShow = document.querySelector("#todo-form");
+
 const USERNAME_KEY = "username";
 const HIDDEN_CLASSNAME = "hidden";
 function onLoginSubmit(event) {
