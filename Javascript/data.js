@@ -44,6 +44,13 @@ const quizs = [
 const quiz = document.querySelector("#quiz span:first-child");
 const answer = document.querySelector("#quiz input:last-child");
 const todaysQuiz = quizs[Math.floor(Math.random() * quizs.length)];
-/* console.log(todaysQuiz.answer); */
-quiz.innerText = todaysQuiz.quiz;
-answer.innerText = `- ${todaysQuiz.answer}`; /*html에 그려줄 필요 없음*/
+/* console.log(JSON.stringify(quizs)); */
+const setQuizs = JSON.stringify(quizs);
+const getAnswer = JSON.parse(setQuizs);
+localStorage.setItem("quizs", setQuizs);
+const currentAnswer = localStorage.getItem("quizs");
+const getCurrentAnswer = JSON.parse(currentAnswer);
+const quizListArray = getCurrentAnswer.map((row) => row.quiz);
+const answerListArray = getCurrentAnswer.map((row) => row.answer);
+quiz.innerText = todaysQuiz.quiz; /*html에 그려줄 필요 없음*/
+/* answer.innerText = `- ${todaysQuiz.answer}`; */
