@@ -1,7 +1,7 @@
-const loginForm = document.querySelector("#Login-form");
-const loginInput = document.querySelector("#Login-form input");
+const loginForm = document.querySelector("#Login-box");
+const loginInput = document.querySelector("#Login-box input");
 const mainDiv = document.getElementById("main");
-const logOut = document.querySelector(".logout");
+const logOut = document.querySelector("#logout");
 /* console.log(answerListArray); */
 const todayAnswersIndex = todaysQuiz.answer;
 const todayQuizIndex = todaysQuiz.quiz;
@@ -16,7 +16,7 @@ function onLoginSubmit(event) {
     quizListArray.indexOf(todayQuizIndex)
   ) {
     event.preventDefault();
-    alert("암호가 틀리다!");
+    alert("틀렸습니다.");
   } else {
     event.preventDefault();
     localStorage.setItem(SOLVED_KEY, solvedArray);

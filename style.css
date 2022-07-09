@@ -10,6 +10,36 @@ body {
   display: none;
 }
 
+.Quiz-box {
+  width: 800px;
+  height: 500px;
+  margin: auto;
+  margin-top: 70px;
+  padding-top: 100px;
+  text-align: center;
+  border-radius: 30px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.quiz-intro {
+  font-size: 30px;
+}
+
+.Quiz-box span {
+  font-size: 40px;
+}
+
+.Quiz-box input {
+  width: 290px;
+  height: 35px;
+  font-size: 30px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 5px;
+  color: black;
+}
+
 .Nav_bar {
   background: linear-gradient(
     to bottom,
@@ -26,6 +56,7 @@ body {
 
 .Nav_bar ul {
   display: inline-block;
+  margin-left: 100px;
   padding-left: 0px;
 }
 
@@ -44,6 +75,20 @@ body {
 .Nav_bar li a {
   color: aliceblue;
   text-decoration: none;
+}
+
+.Nav_bar li.logout button {
+  width: 60px;
+  margin-left: 500px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+li.logout {
+  padding: 0;
 }
 
 .Home {

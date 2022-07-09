@@ -1,48 +1,48 @@
 const quizs = [
   {
-    quiz: "I never dreamed about success, I worked for it",
-    answer: "Estee Lauder",
+    quiz: "Q. [넌센스] 자동차를 톡 하고 치면?",
+    answer: "카톡",
   },
   {
-    quiz: "Do not try to be original, just try to be good.",
-    answer: "Paul Rand",
+    quiz: "Q. [넌센스] 오래될수록 젊어 보이는 것은?",
+    answer: "사진",
   },
   {
-    quiz: "Do not be afraid to give up the good to go for the great",
-    answer: "John D. Rockefeller",
+    quiz: "Q. [넌센스] 광부가 가장 많은 나라는?",
+    answer: "케냐",
   },
   {
-    quiz: "If you cannot fly then run. If you cannot run, then walk. And if you cannot walk, then crawl, but whatever you do, you have to keep moving forward.",
-    answer: "Martin Luther King Jr.",
+    quiz: "Q. [사자성어] 고생 끝에 낙이 온다.",
+    answer: "고진감래",
   },
   {
-    quiz: "Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.",
-    answer: "Thomas Edison",
+    quiz: "Q. [사자성어] 많으면 많을수록 좋다.",
+    answer: "다다익선",
   },
   {
-    quiz: "The fastest way to change yourself is to hang out with people who are already the way you want to be",
-    answer: "REid Hoffman",
+    quiz: "Q. [사자성어] 까마귀 날자 배 떨어진다?(억울한 일을 당했을 때)",
+    answer: "오비이락",
   },
   {
-    quiz: "Money is like gasoline during a road trip. You do not want to run out of gas on your trip, but you are not doing a tour of gas stations",
-    answer: "Tim O Reilly",
+    quiz: "Q. [속담] 목구멍이 OOO",
+    answer: "포도청",
   },
   {
-    quiz: "Some people dream of success, while other people get up every morning and make it happen",
-    answer: "Wayne Huizenga",
+    quiz: "Q. [속담] 어물전 망신은 OOO가 시킨다.",
+    answer: "꼴뚜기",
   },
   {
-    quiz: "The only thing worse than starting something and falling.. is not starting something",
-    answer: "SEth Godin",
+    quiz: "Q. [속담] OO도 위아래가 있다.",
+    answer: "찬물",
   },
   {
-    quiz: "If you really want to do something, you will find a way. If you do not, you will find an excuse.",
-    answer: "Jim Rohn",
+    quiz: "Q. [사자성어] 반딧불과 눈빛으로 공을 이루었다는 뜻으로 고생 속에서도 열심히 노력해서 성공하는 것을 말한다.",
+    answer: "형설지공",
   },
 ];
 
-const quiz = document.querySelector("#quiz span:first-child");
-const answer = document.querySelector("#quiz input:last-child");
+const quiz = document.querySelector("#Qform span:first-child");
+const answer = document.querySelector("#Qform input:last-child");
 const todaysQuiz = quizs[Math.floor(Math.random() * quizs.length)];
 /* console.log(JSON.stringify(quizs)); */
 const setQuizs = JSON.stringify(quizs);
