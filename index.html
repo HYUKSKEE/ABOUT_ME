@@ -4,60 +4,65 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style/style.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
     </style>
     <title>HYUKSKEE</title>
   </head>
   <body>
-    <div id="Login-box" class="Quiz-box">
-      <div class="quiz-intro">
-        <h1 class="sr-only">Quiz box</h1>
-        <p>
-          Hyukskee의 자기소개 페이지를 보려면 <br />
-          Quiz를 풀어야 볼 수 있습니다.
-        </p>
-      </div>
-      <form action="#" method="get" id="Login-form">
-        <div id="Qform">
-          <span></span><br />
-          <input type="text" placeholder="정답을 입력해주세요." />
-          <p>press Enter</p>
+    <div id="Login-box" >
+      <section class="Quiz">
+        <div  class="Quiz-box">
+          <div class="quiz-intro">
+            <h1 class="sr-only">Quiz box</h1>
+            <p>
+              Hyukskee의 자기소개 페이지를 보려면 <br />
+              Quiz를 풀어야 볼 수 있습니다.
+            </p>
+          </div>
+          <form action="#" method="get" id="Login-form">
+            <div id="Qform">
+              <span></span><br />
+              <input type="text" placeholder="정답을 입력해주세요." />
+              <p>press Enter</p>
+            </div>
+          </form>
         </div>
-      </form>
-    </div>
+      </section> 
+    </div>  
     <div id="main" class="hidden">
       <nav class="Nav_bar">
         <h1>Global navigation Menu</h1>
         <ul>
           <li class="li1">
-            <a href="./index.html" aria-label="Go to Home">Home</a>
+            <a href="#section1" aria-label="Go to Home">Home</a>
           </li>
           <li>
-            <a href="./About.html" aria-lable="Go to about page">About</a>
+            <a href="#section2" aria-lable="Go to about page">About</a>
           </li>
           <li>
-            <a href="./Album.html" aria-label="Go to album page">Album</a>
+            <a href="#section3" aria-label="Go to album page">Album</a>
           </li>
           <li>
-            <a href="./Contact.html" aria-label="Go to Contect page">Contact</a>
+            <a href="#section4" aria-label="Go to Contect page">Contact</a>
           </li>
           <li class="logout">
             <button id="logout">나갈게</button>
           </li>
         </ul>
       </nav>
-      <section class="Home">
+      <section id="section1" class="Home">
         <h1><img src="./assets/HYUKSKEE_PROFILE.jpg" alt="" /></h1>
         <p>
-          <strong>Hello! I'm HYUKSKEE.</strong>
+          <strong>Hello! I'm HYUKSKEE.</strong><br>
+          <span>You can scroll down if you want to see me more!</span>
         </p>
       </section>
       <script src="./Javascript/data.js"></script>
       <script src="./Javascript/login.js"></script>
       <div id="main"></div>
-      <section class="About">
+      <section id="section2" class="About">
         <h1>About HYUKSKEE</h1>
         <div class="About-contain">
           <h2><img src="./assets/매좋음느살.png" alt="" /></h2>
@@ -91,7 +96,7 @@
           </div>
         </div>
       </section>
-      <section class="Album">
+      <section id="section3" class="Album">
         <h1 class="sr-only">HYUKSKEE's Album page</h1>
         <ul class="music-player">
           <li class="music-play-item">
@@ -248,7 +253,7 @@
         </ul>
       </section>
       <script src="./Javascript/Album.js"></script>
-      <section class="contact">
+      <section id="section4" class="contact">
         <h1 class="sr-only">Contact page</h1>
         <ul>
           <li>
@@ -310,8 +315,9 @@
             style="cursor: pointer; width: 80px"
           />
         </form>
-      </section>
-      <script src="./Javascript/mail.js"></script>
+        <script src="./Javascript/mail.js"></script>
     </div>
+      </section>
+      
   </body>
 </html>
