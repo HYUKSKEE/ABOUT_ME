@@ -10,7 +10,7 @@
     </style>
     <title>HYUKSKEE</title>
   </head>
-  <body style="background-color: #4e5a56">
+  <body>
     <div id="Login-box" class="Quiz-box">
       <div class="quiz-intro">
         <h1 class="sr-only">Quiz box</h1>
@@ -54,8 +54,264 @@
           <strong>Hello! I'm HYUKSKEE.</strong>
         </p>
       </section>
+      <script src="./Javascript/data.js"></script>
+      <script src="./Javascript/login.js"></script>
+      <div id="main"></div>
+      <section class="About">
+        <h1>About HYUKSKEE</h1>
+        <div class="About-contain">
+          <h2><img src="./assets/매좋음느살.png" alt="" /></h2>
+          <div class="My_info">
+            <ul>
+              <li>
+                <strong style="color: rgb(71, 65, 65)">Name :</strong>
+                Kim Jin-hyuk
+              </li>
+              <li>
+                <strong style="color: rgb(71, 65, 65)">After was born :</strong>
+                325개월
+              </li>
+              <li>
+                <strong style="color: rgb(71, 65, 65)">Job :</strong> singer
+              </li>
+            </ul>
+            <p>
+              <strong>HYUKSKEE's page에 오신걸 환영합니다🙏</strong><br />
+              제가 코딩에 입문하게 된 계기를 말씀드리면! 저는 음악활동을 위해
+              오래 휴학을 했던터라 대학생활을 8년간 했습니다. 학과는
+              정보통신공학을 전공했고, 음악과 학업을 위태롭게 병행하면서 몇 해를
+              보내다 보니 졸업시즌에 선택과 집중이 필요했습니다.<br />
+              <strong>"사람들의 마음을 편하게 하고싶어"</strong><br />
+              음악을 시작했던 이유이자 앞으로 삶의 목표입니다. 나는 이렇게 살기
+              위해 어떤 직업이 좋을까? 라는 생각을 하다보니 예전에 우연히 보았던
+              <strong>"개발자는 세상의 문제를 해결한다"</strong>라는 슬로건이
+              떠올랐고, 그렇게 음악과 방식은 다르지만 개발자 직무에 도전하기로
+              마음먹었습니다.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="Album">
+        <h1 class="sr-only">HYUKSKEE's Album page</h1>
+        <ul class="music-player">
+          <li class="music-play-item">
+            <img
+              src="./assets/Kotakinabalu.jpg"
+              alt="KOTA KINABALU"
+              lang="ko"
+              calss="music-album-cover"
+              style="cursor: pointer"
+              onclick="window.open('./assets/Kotakinabalu.jpg','asdfo8or','scrollbars=yes,width=417,height=385,top=10,left=20');"
+            />
+            <div class="music-info">
+              <div class="music-info-detail">
+                <h1><span>KOTAKINABALU</span></h1>
+                <strong>AntiDep(항우울)</strong>
+              </div>
+              <span>
+                <span class="sr-only">Duration</span>
+                03:31
+              </span>
+            </div>
+            <audio
+              src="./assets/AntiDep - KOTA KINABALU.mp3"
+              class="music-audio"
+              controls
+              controlsList="nodownload"
+            ></audio>
+          </li>
+          <li class="music-play-item">
+            <img
+              src="./assets/InCalifornia.jpg"
+              alt="KOTA KINABALU"
+              lang="ko"
+              calss="music-album-cover"
+              onclick="window.open('./assets/InCalifornia.jpg','asdfo8or','scrollbars=yes,width=417,height=385,top=10,left=20');"
+            />
+            <div class="music-info">
+              <div class="music-info-detail">
+                <h1><span>In California</span></h1>
+                <strong>AntiDep(항우울)</strong>
+              </div>
+              <span>
+                <span class="sr-only">Duration</span>
+                04:32
+              </span>
+            </div>
+            <audio
+              src="./assets/AntiDep - In California.mp3"
+              class="music-audio"
+              controls
+              controlsList="nodownload"
+            ></audio>
+          </li>
+          <li class="music-play-item">
+            <img
+              src="./assets/남교오거리.jpg"
+              alt="KOTA KINABALU"
+              lang="ko"
+              calss="music-album-cover"
+              onclick="window.open('./assets/남교오거리.jpg','asdfo8or','scrollbars=yes,width=417,height=385,top=10,left=20');"
+            />
+            <div class="music-info">
+              <div class="music-info-detail">
+                <h1><span>남교오거리</span></h1>
+                <strong>AntiDep(항우울)</strong>
+              </div>
+              <span>
+                <span class="sr-only">Duration</span>
+                02:09
+              </span>
+            </div>
+            <audio
+              src="./assets/AntiDep - 남교오거리.mp3"
+              class="music-audio"
+              controls
+              controlsList="nodownload"
+            ></audio>
+          </li>
+          <li class="music-play-item">
+            <img
+              src="./assets/사랑한 날.jpg"
+              alt="KOTA KINABALU"
+              lang="ko"
+              calss="music-album-cover"
+              onclick="window.open('./assets/사랑한 날.jpg','asdfo8or','scrollbars=yes,width=417,height=385,top=10,left=20');"
+            />
+            <div class="music-info">
+              <div class="music-info-detail">
+                <h1><span>사랑한 날</span></h1>
+                <strong>김진혁</strong>
+              </div>
+              <span>
+                <span class="sr-only">Duration</span>
+                05:00
+              </span>
+            </div>
+            <audio
+              src="./assets/김진혁 - 사랑한 날.mp3"
+              class="music-audio"
+              controls
+              controlsList="nodownload"
+            ></audio>
+          </li>
+          <li class="music-play-item">
+            <img
+              src="./assets/잘생각해봐.jpg"
+              alt="KOTA KINABALU"
+              lang="ko"
+              calss="music-album-cover"
+              onclick="window.open('./assets/잘생각해봐.jpg','asdfo8or','scrollbars=yes,width=417,height=385,top=10,left=20');"
+            />
+            <div class="music-info">
+              <div class="music-info-detail">
+                <h1><span>잘 생각해봐</span></h1>
+                <strong>김진혁</strong>
+              </div>
+              <span>
+                <span class="sr-only">Duration</span>
+                03:45
+              </span>
+            </div>
+            <audio
+              src="./assets/김진혁 - 잘 생각해봐.mp3"
+              class="music-audio"
+              controls
+              controlsList="nodownload"
+            ></audio>
+          </li>
+          <li class="music-play-item">
+            <img
+              src="./assets/Destiny.jpg"
+              alt="KOTA KINABALU"
+              lang="ko"
+              calss="music-album-cover"
+              onclick="window.open('./assets/Destiny.jpg','asdfo8or','scrollbars=yes,width=417,height=385,top=10,left=20');"
+            />
+            <div class="music-info">
+              <div class="music-info-detail">
+                <h1><span>운명</span></h1>
+                <strong>진혁</strong>
+              </div>
+              <span>
+                <span class="sr-only">Duration</span>
+                03:51
+              </span>
+            </div>
+            <audio
+              src="./assets/진혁 - 운명.mp3"
+              class="music-audio"
+              controls
+              controlsList="nodownload"
+            ></audio>
+          </li>
+        </ul>
+      </section>
+      <script src="./Javascript/Album.js"></script>
+      <section class="contact">
+        <h1 class="sr-only">Contact page</h1>
+        <ul>
+          <li>
+            <a href="https://github.com/HYUKSKEE" target="_blank"
+              ><img src="./assets/Github.jpg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/c/%ED%95%AD%EC%9A%B0%EC%9A%B8AntiDep%EB%B0%95%EC%84%B8%ED%95%98"
+              target="_blank"
+              ><img src="./assets/youtube.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="https://velog.io/@gin2808" target="_blank"
+              ><img src="./assets/velog.jfif" alt=""
+            /></a>
+          </li>
+        </ul>
+
+        <form class="email-form">
+          <h1 class="sr-only">Send Email to Hyukskee</h1>
+          <p>
+            <img src="./assets/mail.png" alt="#" />
+            <span>Send Email to Hyukskee</span>
+          </p>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="성함을 입력해주세요"
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="메일 주소를 입력해주세요"
+          />
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            pattern="[0-9]+"
+            placeholder="연락처를 입력해주세요 (생략 가능)"
+          />
+          <textarea
+            name="message"
+            id="message"
+            rows="5"
+            placeholder="내용을 입력해주세요 "
+          ></textarea>
+          <input
+            type="button"
+            id="submit"
+            name="submit"
+            class="submit"
+            value="Submit"
+            style="cursor: pointer; width: 80px"
+          />
+        </form>
+      </section>
+      <script src="./Javascript/mail.js"></script>
     </div>
-    <script src="./Javascript/data.js"></script>
-    <script src="./Javascript/login.js"></script>
   </body>
 </html>

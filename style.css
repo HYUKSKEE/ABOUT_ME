@@ -1,4 +1,5 @@
 body {
+  display: contents;
   font-family: "Roboto Slab", serif;
 }
 
@@ -41,13 +42,15 @@ body {
 }
 
 .Nav_bar {
+  width: 100%;
+  top: 0;
+  position: fixed;
   background: linear-gradient(
     to bottom,
     rgb(255, 255, 251, 0.01),
     rgb(255, 255, 255, 0.03),
     rgb(255, 255, 255, 0.05)
   );
-
   margin: auto;
   text-align: center;
   font-size: 15px;
@@ -90,10 +93,12 @@ body {
 li.logout {
   padding: 0;
 }
-
+/*Home section*/
 .Home {
-  width: 1500px;
+  width: 100%;
+  height: 100vh;
   margin: auto;
+  background: #4e5a56;
 }
 
 .Home h1 {
@@ -103,13 +108,13 @@ li.logout {
 }
 
 .Home img {
+  width: 500px;
   height: 700px;
   border-left: 1px solid rgb(97, 112, 107, 0.2);
   border-right: 1px solid rgb(97, 112, 107, 0.2);
   border-bottom: 2px solid rgb(97, 112, 107, 0.2);
-  width: 500px;
   border-radius: 50%;
-  margin: 30px 0px 30px 0px;
+  margin: 100px 0px 30px 0px;
   transition-duration: 1.8s;
   transition-delay: 0.2s;
 }
@@ -122,4 +127,211 @@ li.logout {
   letter-spacing: 0.07cm;
   color: aliceblue;
   text-align: center;
+}
+
+/*About section*/
+.About {
+  width: 100%;
+  height: 100vh;
+
+  background: #029999;
+  display: flex;
+  float: left;
+}
+
+.About-contain {
+  margin-top: 200px;
+  margin-left: 60px;
+  display: flex;
+}
+
+.About h1 {
+  display: none;
+}
+
+.About ul {
+  list-style: none;
+}
+
+.About h2 img {
+  width: 350px;
+  height: 350px;
+  margin: 30px 30px 30px 350px;
+  border-radius: 25%;
+  box-shadow: 0px 10px 10px 5px rgb(0, 0, 0, 0.2);
+}
+
+.About .My_info {
+  margin-top: 70px;
+  width: 650px;
+  color: aliceblue;
+}
+
+.About .My_info ul {
+  font-size: 20px;
+}
+
+.About .My_info p {
+  margin-left: 40px;
+}
+
+/*Album section*/
+.Album {
+  display: inline-block;
+  width: 100%;
+  height: 100vh;
+  background-color: #a3cca2;
+}
+.music-player {
+  font-family: "Nanum Myeongjo", serif;
+  margin: auto;
+  margin-top: 200px;
+  max-width: 540px;
+  max-width: 840px;
+  padding: 20px 20px 40px 20px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+audio {
+  width: 260px;
+  height: 55px;
+  margin-left: 20px;
+}
+
+.music-play-item {
+  margin-top: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+.music-play-item :hover {
+  color: rgba(0, 0, 0, 0.8);
+  opacity: 0.6;
+}
+.music-play-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 3px;
+  margin-right: 16px;
+}
+.music-info {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding: 8px 0;
+  border-top: 1px solid #e5e5e5;
+  cursor: pointer;
+}
+.music-info h1 {
+  margin: 2px;
+}
+.music-info * {
+  transition: opacity 120ms;
+}
+.music-info-detail {
+  font-size: 10px;
+  font-weight: 100;
+  letter-spacing: 0.1cm;
+}
+
+.Album.container {
+  width: 80%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.music-player ul {
+  padding: 0px 30px 0px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.music-player ul li {
+  list-style: none;
+}
+
+.music-player ul li img {
+  width: 100px;
+  height: 100px;
+  margin-left: 30px;
+  border-radius: 50%;
+}
+
+/*contact page*/
+.contact {
+  display: inline-block;
+  width: 100%;
+  height: 100vh;
+  background: #ddccbb;
+}
+
+.contact ul {
+  margin-top: 100px;
+  padding: 0px 30px 0px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact ul li {
+  list-style: none;
+}
+
+.contact ul li img {
+  width: 100px;
+  height: 100px;
+  margin-left: 30px;
+  border-radius: 50%;
+}
+.email-form {
+  width: 400px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 5px 0px 15px 0px;
+  text-align: center;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.email-form p {
+  margin: 16px 0px 0px 70px;
+  display: table;
+}
+
+.email-form p img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.email-form p span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.email-form input {
+  width: 220px;
+  height: 30px;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(231, 231, 231);
+  border-radius: 5px;
+  box-shadow: 0px 6px 11px rgb(182, 182, 182);
+}
+
+.email-form textarea {
+  width: 220px;
+  margin-top: 20px;
+  margin-bottom: -10px;
+  border: 1px solid rgb(231, 231, 231);
+  border-radius: 5px;
+  box-shadow: 0px 6px 11px rgb(182, 182, 182);
 }
