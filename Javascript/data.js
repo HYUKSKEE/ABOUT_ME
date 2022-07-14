@@ -36,8 +36,20 @@ const quizs = [
     answer: "찬물",
   },
   {
-    quiz: "Q. [사자성어] 반딧불과 눈빛으로 공을 이루었다는 뜻으로 고생 속에서도 열심히 노력해서 성공하는 것을 말한다.",
-    answer: "형설지공",
+    quiz: '[코딩퀴즈] const a = "hi" 일때, console.log(`${a} HYUKSKEE`) 값을 적으시오.',
+    answer: "hi HYUKSKEE",
+  },
+  {
+    quiz: '[코딩퀴즈] const data = "123" 일때, console.log(typeof(data)) 값을 적으시오.',
+    answer: "string",
+  },
+  {
+    quiz: "[코딩퀴즈] const data = undefined 일때, console.log(typeof(data)) 값을 적으시오.",
+    answer: "undefined",
+  },
+  {
+    quiz: '[코딩퀴즈] const data = "" 일때, console.log(typeof(data)) 값을 적으시오. ',
+    answer: "string",
   },
 ];
 
