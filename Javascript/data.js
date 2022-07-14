@@ -48,8 +48,8 @@ const quizs = [
     answer: "undefined",
   },
   {
-    quiz: '[코딩퀴즈] const data = "" 일때, console.log(typeof(data)) 값을 적으시오. ',
-    answer: "스트링",
+    quiz: "[코딩퀴즈] const data = null 일때, console.log(typeof(data)) 값을 적으시오. ",
+    answer: "object",
   },
 ];
 
